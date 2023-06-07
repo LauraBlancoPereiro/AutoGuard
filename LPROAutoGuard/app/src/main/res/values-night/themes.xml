@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AutoGuard" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gris_claro</item>
+        <item name="colorPrimaryDark">@color/gris_oscuro</item>
+        <item name="colorAccent">@color/naranja</item>
+        <item name="colorButtonNormal">@color/blanco</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

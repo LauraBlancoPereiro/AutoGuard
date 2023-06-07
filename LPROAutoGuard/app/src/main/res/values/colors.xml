@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="naranja">#FFF66E0D</color>
+    <color name="blanco">#FFF5E6CB</color>
+    <color name="gris_claro">#FF616161</color>
+    <color name="gris_oscuro">#FF313131</color>
+</resources>

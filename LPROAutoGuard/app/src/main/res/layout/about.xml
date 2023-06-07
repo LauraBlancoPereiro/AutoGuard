@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="308dp"
+        android:layout_height="517dp"
+        android:layout_marginBottom="68dp"
+        android:lineSpacingExtra="8sp"
+        android:text="\tAutoguard es un proyecto de la asignatura de LPRO de la escuela de telecomunicaciones de la universidad de Vigo. Este proyecto tiene como finalidad acabar con los accidentes debido a las distracciones al volante y ayudarte a mantener la concentración en la carretera. Autoguard, la mejor forma de salvar tu vida.\n\t\tIntegrantes:\n\t\t\t- Anxo Rodríguez Bastón\n\t\t\t- Clara Mingyue Lopez Piñeiro\n\t\t\t- Laura Blanco Pereiro\n\t\t\t- Iago Porto Montes"
+        android:textAlignment="viewStart"
+        android:textColor="#F5E6CB"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#313131"
+        android:focusable="true"
+        android:foregroundTint="#616161"
+        android:onClick="atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/atras" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="316dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407"
+        app:srcCompat="@drawable/ultimatelogo2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

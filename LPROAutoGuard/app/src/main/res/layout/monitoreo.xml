@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131"
+    android:onClick="atras">
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#313131"
+        android:onClick="atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/atras" />
+
+    <FrameLayout
+        android:id="@+id/preview_display_layout"
+        android:layout_width="398dp"
+        android:layout_height="592dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_start_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="72dp"
+        android:text="CAMARA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/parametros"
+        app:layout_constraintTop_toBottomOf="@+id/preview_display_layout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/avisoVolumen"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="205dp"
+        android:layout_height="111dp"
+        android:background="#FFF66E0D"
+        android:text="Suba el volumen"
+        android:textAlignment="center"
+        android:textColor="#FFF5E6CB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/preview_display_layout"
+        app:layout_constraintEnd_toEndOf="@+id/preview_display_layout"
+        app:layout_constraintStart_toStartOf="@+id/preview_display_layout"
+        app:layout_constraintTop_toTopOf="@+id/preview_display_layout" />
+
+    <Button
+        android:id="@+id/volumen"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:background="#FF616161"
+        android:onClick="botonVolumen"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="@+id/preview_display_layout"
+        app:layout_constraintEnd_toEndOf="@+id/preview_display_layout"
+        app:layout_constraintStart_toStartOf="@+id/preview_display_layout"
+        app:layout_constraintTop_toTopOf="@+id/preview_display_layout" />
+
+    <TextView
+        android:id="@+id/parametros"
+        android:layout_width="162dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="7dp"
+        android:textColor="#F66E0D"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preview_display_layout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reset_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopNotificationSound"
+        android:text="parar notificacion"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/parametros"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_camera"
+        app:layout_constraintVertical_bias="0.625" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
